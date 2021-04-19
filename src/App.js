@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import View from "./View.jpg";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='main-box'>
+        <h1>Seattle, WA Weather</h1>
+        <div className='info-box'>
+          <div className='info-box-left'>
+            <div className='grey-font'>As of 7:05 pm PDT</div>
+            <h2 className='bold-font'>79°F</h2>
+            <div>Sunny</div>
+          </div>
+          <div className='info-box-right'>
+            <div>Sunny Icon</div>
+            <div>High/Low</div>
+            <input
+              type='text'
+              placeholder='Enter the City Name'
+              className='search-box'
+            />
+          </div>
+        </div>
+      </div>
+      <div className='main-box-2'>Daily Weather</div>
+      <img src={View} alt='main image' className='main-img' />
     </div>
   );
 }
