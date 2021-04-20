@@ -5,7 +5,7 @@
   z-index: -1;
 }
 .main-box {
-  background: rgba(61, 88, 88, 0.8);
+  background: rgba(232, 243, 243, 0.8);
   border-radius: 1rem;
   width: 400px;
   height: 200px;
@@ -13,7 +13,7 @@
   z-index: 1;
   margin-top: 10%;
   margin-left: 10%;
-  color: white;
+  color: black;
   font-weight: 700;
   padding: 10px 20px 10px 20px;
 }
@@ -36,20 +36,40 @@
 
 .info-box-right {
   margin-left: 100px;
+  margin-top: -40px;
 }
 .grey-font {
-  color: lightgrey;
+  color: grey;
+  font-size: small;
 }
 .search-box {
-  margin-top: 30px;
   border: none;
-  border-radius: 0.5rem;
+
   height: 30px;
   background: rgba(225, 247, 247, 0.4);
-  color: white;
+  color: black;
   font: xx-large;
 }
 ::placeholder {
   color: white;
   padding: 6px;
+}
+.search-btn {
+  background: black;
+  color: white;
+  height: 30px;
+  border: none;
+}
+.city-submission {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: grey solid 1px;
+  border-radius: 0.5rem;
+}
+.icon {
+  width: 70px;
+  margin-left: 40px;
+  margin-top: 10px;
 }
