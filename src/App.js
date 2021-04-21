@@ -24,7 +24,7 @@ function App() {
     changeUnits,
   } = useProductsContext();
 
-  const url = `http://api.openweathermap.org/data/2.5/find?q=${city}&units=${units}&appid=${process.env.REACT_APP_API_KEY}`;
+  const url = `https://api.openweathermap.org/data/2.5/find?q=${city}&units=${units}&appid=${process.env.REACT_APP_API_KEY}`;
 
   const fetchData = async (url) => {
     try {
