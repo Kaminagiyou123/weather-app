@@ -101,7 +101,7 @@ function App() {
             </button>
             <div className='icon-container'>
               <img
-                src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
+                src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
                 alt={main}
                 className='icon'
               />
@@ -153,7 +153,7 @@ function App() {
               {index > 0 && <div>{dayName}</div>}
 
               <img
-                src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
+                src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
                 alt={main}
                 className='icon'
               />
