@@ -18,7 +18,7 @@
   padding: 10px 20px 10px 20px;
 }
 .main-box-2 {
-  background: rgba(61, 88, 88, 0.8);
+  /* background: rgba(61, 88, 88, 0.8); */
   border-radius: 1rem;
   position: fixed;
   top: 500px;
@@ -28,6 +28,9 @@
   color: white;
   font-weight: 700;
   padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
 }
 .info-box {
   display: flex;
@@ -36,7 +39,7 @@
 
 .info-box-right {
   margin-left: 100px;
-  margin-top: -40px;
+  margin-top: -50px;
 }
 .grey-font {
   color: grey;
@@ -72,4 +75,32 @@
   width: 70px;
   margin-left: 40px;
   margin-top: 10px;
+}
+.daily-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(232, 243, 243, 0.8);
+  margin: 5px;
+  color: black;
+  height: 25%;
+  border-radius: 1rem;
+  font-size: small;
+  padding: 5px;
+}
+.daily-container > div {
+  margin-left: 5px;
+}
+.units {
+  margin-left: 50px;
+  background: rgba(112, 122, 122, 0.4);
+  color: color;
+  height: 20px;
+  width: 100px;
+  border: none;
+  margin-bottom: -30px;
+  margin-top: -40px;
+  border-radius: 0.5rem;
+  outline-style: none;
 }

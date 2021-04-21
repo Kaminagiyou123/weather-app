@@ -40,6 +40,20 @@ const reducer = (state, action) => {
       icon,
     };
   }
+
+  if (action.type === "SEARCH_DAILY") {
+    return { ...state, daily: [...action.payload] };
+  }
+  if (action.type === "CHANGE_UNITS") {
+    if (state.units === "imperial") {
+      return { ...state, units: "metric" };
+    } else {
+      return {
+        ...state,
+        units: "imperial",
+      };
+    }
+  }
   throw new Error(`No Matching "${action.type}" - action type`);
 };
 

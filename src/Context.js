@@ -11,11 +11,15 @@ const initialState = {
   main: "",
   lat: "",
   lon: "",
+  daily: [],
 };
 
 const ProductsContext = React.createContext();
 export const ProductsProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const changeUnits = () => {
+    dispatch({ type: "CHANGE_UNITS" });
+  };
 
   const SearchCity = (item) => {
     dispatch({ type: "CHANGE_CITY", payload: item });
@@ -26,6 +30,9 @@ export const ProductsProvider = ({ children }) => {
   const noCity = () => {
     dispatch({ type: "NO_CITY" });
   };
+  const searchDaily = (item) => {
+    dispatch({ type: "SEARCH_DAILY", payload: item });
+  };
 
   return (
     <ProductsContext.Provider
@@ -34,6 +41,8 @@ export const ProductsProvider = ({ children }) => {
         SearchCity,
         noCity,
         dataPull,
+        searchDaily,
+        changeUnits,
       }}
     >
       {children}
